@@ -15,7 +15,7 @@ def test_one():
     browser.element('[aria-label="Choose Monday, March 6th, 1995"]').click()
     browser.element('#subjectsInput').type('Maths').press_enter().type('History').press_enter()
     browser.element('[for="hobbies-checkbox-2"]').click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath('files/test.jpg'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('../files/test.jpg'))
     browser.element('#currentAddress').type('Astana')
     browser.element('#react-select-3-input').type('Haryana').press_enter()
     browser.element('#react-select-4-input').type('Karnal').press_enter()
