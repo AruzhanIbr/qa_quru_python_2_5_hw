@@ -19,7 +19,7 @@ def test_one():
     browser.element('#currentAddress').type('Astana')
     browser.element('#react-select-3-input').type('Haryana').press_enter()
     browser.element('#react-select-4-input').type('Karnal').press_enter()
-    browser.element('#submit').press_enter
+    browser.element('#submit').scroll_to().click()
     browser.element('#example-modal-sizes-title-lg').should(have.text('Thanks for submitting the form'))
     browser.all('.modal-body td+td').should(have.texts(
         'Elena Romanova',
